@@ -1,0 +1,120 @@
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 94px;
+  border-top: 1px solid #ececec;
+}
+
+.portfolio__title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 56px;
+}
+
+.btn-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__box {
+  width: calc((100% - 2 * 30px) / 3);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.cards__box:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.cards__box:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.cards__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards__img {
+  width: 100%;
+  display: block;
+}
+
+.cards__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-right: 24px;
+  padding-left: 24px;
+  transform: translateY(100%);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .cards__box:hover & {
+    transform: translateY(0);
+  }
+}
+
+.cards__socet {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+}
+
+.cards__titles {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cards__text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
