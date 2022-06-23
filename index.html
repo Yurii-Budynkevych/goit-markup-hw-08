@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="Веб-Студия" content="Домашняя страница ВебСтудио" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,46 +23,87 @@
     <header class="page-header">
       <div class="container container--header">
         <a lang="en" href="./index.html" class="logo"
-          >Web<span class="logo logo--black">Studio</span></a
+          >Web<span class="logo--black">Studio</span></a
         >
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a
-                href="./index.html"
-                class="nav-list__link nav-list__link--current"
-                >Студия</a
+        <button
+          type="button"
+          class="menu-batton"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/svg/symbol-defs.svg#menu"
+            ></use>
+            <use
+              class="icon-kross"
+              href="./images/svg/symbol-defs.svg#kross"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" id="menu" data-menu>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a
+                  href="./index.html"
+                  class="nav-list__link nav-list__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth-list">
+            <li class="auth-list__item">
+              <a href="mailto:info@devstudio.com" class="auth-list__link">
+                <svg class="auth-list__icon-brief">
+                  <use href="./images/svg/symbol-defs.svg#brief"></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="" class="nav-list__link">Контакты</a>
+            <li class="auth-list__item">
+              <a
+                href="tel:+380961111111"
+                class="auth-list__link auth-list__link--supertel"
+                ><svg class="auth-list__icon-smartphone">
+                  <use
+                    href="./images/svg/symbol-defs.svg#smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="auth-list">
-          <li class="auth-list__item">
-            <a href="mailto:info@devstudio.com" class="auth-list__link">
-              <svg class="auth-list__icon-brief">
-                <use href="./images/svg/symbol-defs.svg#brief"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="auth-list__item">
-            <a href="tel:+380961111111" class="auth-list__link"
-              ><svg class="auth-list__icon-smartphone">
-                <use href="./images/svg/symbol-defs.svg#smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="menu-socials">
+            <li class="menu-socials-item">
+              <a class="menu-socials-link" href="">Instagram</a>
+            </li>
+            <li class="menu-socials-item">
+              <a class="menu-socials-link" href="">Twitter</a>
+            </li>
+            <li class="menu-socials-item">
+              <a class="menu-socials-link" href="">Facebook</a>
+            </li>
+            <li class="menu-socials-item">
+              <a class="menu-socials-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
-    <main>
-      <!-- hero -->
+    <!-- <main>
       <section class="index-hero">
         <div class="container">
           <h1 class="index-hero-title">
@@ -72,7 +114,6 @@
           </button>
         </div>
       </section>
-      <!-- features -->
       <section class="features-section">
         <div class="container">
           <h2 class="features-hidden-title">Особенности</h2>
@@ -128,7 +169,6 @@
           </ul>
         </div>
       </section>
-      <!-- what we do -->
       <section class="what-we-do-section">
         <div class="container">
           <h2 class="what-we-do-title">Чем мы занимаемся</h2>
@@ -169,7 +209,6 @@
           </ul>
         </div>
       </section>
-      <!-- Our team -->
       <section class="our-team-section">
         <div class="container">
           <h2 class="our-team-title">Наша команда</h2>
@@ -337,7 +376,6 @@
           </ul>
         </div>
       </section>
-      <!-- Customers -->
       <section class="customers-section">
         <div class="container">
           <h2 class="customers-title">Постоянные клиенты</h2>
@@ -536,8 +574,8 @@
           <button class="button modal-submit" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
-
+    </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

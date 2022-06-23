@@ -1,19 +1,19 @@
 body {
-    color: var(--primary-text-color);
-    background-color: var(--primary-bcg);
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bcg);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1,
@@ -22,11 +22,22 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
 .container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
 }
