@@ -6,10 +6,35 @@
 
 .footer-content {
   display: flex;
-}
+  flex-direction: column;
+  align-items: center;
 
+  @media screen and (min-width: 1600px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.foterdiv {
+  @media screen and (min-width: 768px,) {
+    display: flex;
+  }
+}
+.adresdiv {
+  @media screen and (max-width: 1599px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-right: 70px;
+    margin-left: 215px;
+  }
+}
 .logo--white {
   color: var(--white-color);
+}
+.logo--nocry {
+  @media screen and (min-width: 1600px) {
+    margin-left: 0;
+  }
 }
 
 .footer-address {
@@ -46,8 +71,15 @@
 }
 
 .join-us-section {
-  margin-top: 12px;
-  margin-left: 70px;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-left: 0;
+    margin-right: 93px;
+  }
 }
 
 .join-us-title {
@@ -58,8 +90,13 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .footer-socials {
@@ -97,8 +134,10 @@
 }
 
 .footer-form {
-  margin-top: 12px;
-  margin-left: 93px;
+  margin-top: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-top: 0;
+  }
 }
 
 .footer-label {
@@ -123,18 +162,30 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 .footer-form-box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1600px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .footer-input {
-  min-width: 358px;
-  margin-right: 12px;
+  min-width: 450px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -144,4 +195,13 @@
   color: #ffffff;
   background-color: var(--accent-bcg);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  @media screen and (min-width: 768px) {
+    min-width: 358px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
