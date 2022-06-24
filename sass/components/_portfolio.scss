@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   border-top: 1px solid #ececec;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -26,28 +26,24 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 40px;
+  margin: -15px;
+
+  &__item {
+    margin: 15px;
+  }
 
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
 
-.btn-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-.btn-list__item:nth-last-child(-n + 2) {
-  @media screen and (max-width: 767px) {
-    margin-top: 15px;
-  }
-}
-
 .cards {
+  margin-top: 40px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +66,7 @@
     width: calc(100% / 2 - 30px);
     margin: 15px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: calc(100% / 3 - 30px);
   }
 }
@@ -81,7 +77,7 @@
   }
 }
 .cards__box:first-child .cards__socet {
-  @media screen and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 56px;
   }
 }
